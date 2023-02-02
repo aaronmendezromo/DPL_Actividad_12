@@ -44,7 +44,7 @@ public class ProyectoETS{
 				System.out.print("Introduzca el dinero en su "+transaccion+": ");
 				dinero = scan.nextFloat();
 			}catch(InputMismatchException e){
-				System.out.println("Solo introduzca números, por favor");
+				System.out.println("Revisa correctamente, solo se permiten números.");
 				scan.next();
 				control = false;
 			}
@@ -74,7 +74,7 @@ public class ProyectoETS{
 
 			boolean control = usuarios.get(num_c).cargo(dinero);
 
-			if(!control) System.out.println("Saldo insuficiente");
+			if(!control) System.out.println("Error en el saldo, dinero insuficiente.");
 		}
 	}
 
